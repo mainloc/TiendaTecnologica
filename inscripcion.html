@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscripción - Tienda TecnologicA</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav>
+        <div class="nav-wrapper blue darken-3">
+            <a href="#" class="brand-logo center">Tienda TecnologicA</a>
+            <ul id="nav-mobile" class="left hide-on-med-and-down">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="catalogo.html">Catálogo</a></li>
+                <li><a href="carrito.html">Carrito</a></li>
+                <li><a href="inscripcion.html">Inscripción</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h3 class="center-align">Formulario de Inscripción</h3>
+        <form id="form-inscripcion" action="mailto:xxx@gmail.com" method="post" enctype="text/plain" class="col s12">
+            <div class="input-field">
+                <input id="nombre" type="text" required>
+                <label for="nombre">Nombres</label>
+            </div>
+            <div class="input-field">
+                <input id="primer_apellido" type="text" required>
+                <label for="primer_apellido">Primer Apellido</label>
+            </div>
+            <div class="input-field">
+                <input id="segundo_apellido" type="text" required>
+                <label for="segundo_apellido">Segundo Apellido</label>
+            </div>
+            <div class="input-field">
+                <input id="fecha_nacimiento" type="date" required>
+                <label for="fecha_nacimiento">Fecha de Nacimiento</label>
+            </div>
+            <div class="input-field">
+                <input id="email" type="email" required>
+                <label for="email">E-mail de contacto</label>
+            </div>
+            <div class="input-field">
+                <textarea id="mensaje" class="materialize-textarea" required></textarea>
+                <label for="mensaje">Mensaje</label>
+            </div>
+            <label>
+                <input id="check" type="checkbox" required>
+                <span>He leído y acepto la política de privacidad</span>
+            </label>
+            <br><br>
+            <button class="btn blue darken-2" type="submit">Enviar</button>
+            <button class="btn red darken-2" type="reset">Reiniciar</button>
+        </form>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            M.AutoInit();
+        });
+    </script>
+</body>
+
+</html>
